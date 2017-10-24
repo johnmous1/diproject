@@ -64,8 +64,8 @@ body {
 			game.physics.arcade.enable(player);
 			player.body.gravity.y = 370;
 			player.body.collideWorldBounds = true;
-			player.animations.add('walkRight', [ 3 ], 2, true);
-			player.animations.add('walkLeft',  [ 2], 2, true);
+			player.animations.add('walkRight', [ 7,8,9,10  ], 10, true);
+			player.animations.add('walkLeft',  [ 1,2,3,4,5], 10, true);
 			player.goesRight = true;
 			game.camera.follow(player);
 			cursors = game.input.keyboard.createCursorKeys();
